@@ -8,6 +8,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingComponent } from './shopping/shopping.component';
 import { RecipeDetailsComponent } from './recipes/recipe-details/recipe-details.component';
 import { HeaderComponent } from './header/header.component';
+import {SelectRecipeService} from './recipes/select-recipe.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SelectRecipeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
