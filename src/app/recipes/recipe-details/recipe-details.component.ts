@@ -9,7 +9,7 @@ import {Recipe} from '../recipe-list/recipe-item/recipe.model';
 })
 export class RecipeDetailsComponent implements OnInit {
 
-  selectedRecipe: Recipe = new Recipe('shlomi', 'my intial description', '');
+  selectedRecipe: Recipe = new Recipe('Recipes', 'please select a recipe', '');
 
   constructor(public recipeService: SelectRecipeService) { }
 

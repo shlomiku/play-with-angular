@@ -9,17 +9,19 @@
       <img [src]="selectedRecipe.imagePath" alt="{{selectedRecipe.name}}" class="img-responsive" style="max-height: 300px;" *ngIf="selectedRecipe.imagePath">
     </div>
   </div>
-  <hr>
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-      Edit Recipe
-      <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <li>HTML</li>
-      <li>CSS</li>
-    </ul>
+  <div *ngIf="selectedRecipe.imagePath">
+    <hr>
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Edit Recipe
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
   </div>
 
 </div>
-
