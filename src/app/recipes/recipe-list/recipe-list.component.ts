@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Recipe} from './recipe-item/recipe.model';
+import {Recipe} from './recipe.model';
 import {SelectRecipeService} from '../select-recipe.service';
 
 declare var require: any;
